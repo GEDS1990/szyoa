@@ -1137,26 +1137,26 @@
             </execution>
           </executions>
         </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>jalopy-maven-plugin</artifactId>
-          <version>${jalopy-maven-plugin.version}</version>
-          <configuration>
-            <convention>jalopy.xml</convention>
-            <encoding>${project.build.sourceEncoding}</encoding>
-            <history>file</history>
-            <fileFormat>UNIX</fileFormat>
-          </configuration>
-          <executions>
-            <execution>
-              <id>format-java-sources</id>
-              <phase>process-sources</phase>
-              <goals>
-                <goal>format</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
+        <!--<plugin>-->
+          <!--<groupId>org.codehaus.mojo</groupId>-->
+          <!--<artifactId>jalopy-maven-plugin</artifactId>-->
+          <!--<version>${jalopy-maven-plugin.version}</version>-->
+          <!--<configuration>-->
+            <!--<convention>jalopy.xml</convention>-->
+            <!--<encoding>${project.build.sourceEncoding}</encoding>-->
+            <!--<history>file</history>-->
+            <!--<fileFormat>UNIX</fileFormat>-->
+          <!--</configuration>-->
+          <!--<executions>-->
+            <!--<execution>-->
+              <!--<id>format-java-sources</id>-->
+              <!--<phase>process-sources</phase>-->
+              <!--<goals>-->
+                <!--<goal>format</goal>-->
+              <!--</goals>-->
+            <!--</execution>-->
+          <!--</executions>-->
+        <!--</plugin>-->
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>native2ascii-maven-plugin</artifactId>
@@ -1174,21 +1174,21 @@
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${jacoco-maven-plugin.version}</version>
         </plugin>
-        <plugin>
-          <groupId>org.apache.cxf</groupId>
-          <artifactId>cxf-codegen-plugin</artifactId>
-          <version>${cxf.version}</version>
-          <configuration>
-            <wsdlOptions>
-              <wsdlOption>
-                <packagenames>
-                  <packagename>${cxf.packagename}</packagename>
-                </packagenames>
-                <wsdl>${cxf.wsdl}</wsdl>
-              </wsdlOption>
-            </wsdlOptions>
-          </configuration>
-        </plugin>
+        <!--<plugin>-->
+          <!--<groupId>org.apache.cxf</groupId>-->
+          <!--<artifactId>cxf-codegen-plugin</artifactId>-->
+          <!--<version>${cxf.version}</version>-->
+          <!--<configuration>-->
+            <!--<wsdlOptions>-->
+              <!--<wsdlOption>-->
+                <!--<packagenames>-->
+                  <!--<packagename>${cxf.packagename}</packagename>-->
+                <!--</packagenames>-->
+                <!--<wsdl>${cxf.wsdl}</wsdl>-->
+              <!--</wsdlOption>-->
+            <!--</wsdlOptions>-->
+          <!--</configuration>-->
+        <!--</plugin>-->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
@@ -1273,57 +1273,57 @@
       </plugin>
 	</plugins></build>
 
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>${maven-project-info-reports-plugin.version}</version>
-        <configuration>
-          <inputEncoding>${project.build.sourceEncoding}</inputEncoding>
-          <outputEncoding>${project.reporting.outputEncoding}</outputEncoding>
-          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>${maven-javadoc-plugin.version}</version>
-        <configuration>
-          <javadocVersion>${java.version}</javadocVersion>
-          <encoding>${project.build.sourceEncoding}</encoding>
-          <docencoding>${project.reporting.outputEncoding}</docencoding>
-          <charset>${project.reporting.outputEncoding}</charset>
-        </configuration>
-      </plugin>
-      <!--
-      <plugin>
-        <groupId>com.googlecode.maven-overview-plugin</groupId>
-        <artifactId>maven-overview-plugin</artifactId>
-        <version>${maven-overview-plugin.version}</version>
-      </plugin>
-      <plugin>
-        <groupId>net.sf</groupId>
-        <artifactId>stat-scm</artifactId>
-        <version>${stat-scm.version}</version>
-      </plugin>
-      -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>versions-maven-plugin</artifactId>
-        <version>${versions-maven-plugin.version}</version>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>dependency-updates-report</report>
-              <report>plugin-updates-report</report>
-              <report>property-updates-report</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-    </plugins>
-  </reporting>
+  <!--<reporting>-->
+    <!--<plugins>-->
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-project-info-reports-plugin</artifactId>-->
+        <!--<version>${maven-project-info-reports-plugin.version}</version>-->
+        <!--<configuration>-->
+          <!--<inputEncoding>${project.build.sourceEncoding}</inputEncoding>-->
+          <!--<outputEncoding>${project.reporting.outputEncoding}</outputEncoding>-->
+          <!--<dependencyLocationsEnabled>false</dependencyLocationsEnabled>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+        <!--<version>${maven-javadoc-plugin.version}</version>-->
+        <!--<configuration>-->
+          <!--<javadocVersion>${java.version}</javadocVersion>-->
+          <!--<encoding>${project.build.sourceEncoding}</encoding>-->
+          <!--<docencoding>${project.reporting.outputEncoding}</docencoding>-->
+          <!--<charset>${project.reporting.outputEncoding}</charset>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
+      <!--&lt;!&ndash;-->
+      <!--<plugin>-->
+        <!--<groupId>com.googlecode.maven-overview-plugin</groupId>-->
+        <!--<artifactId>maven-overview-plugin</artifactId>-->
+        <!--<version>${maven-overview-plugin.version}</version>-->
+      <!--</plugin>-->
+      <!--<plugin>-->
+        <!--<groupId>net.sf</groupId>-->
+        <!--<artifactId>stat-scm</artifactId>-->
+        <!--<version>${stat-scm.version}</version>-->
+      <!--</plugin>-->
+      <!--&ndash;&gt;-->
+      <!--<plugin>-->
+        <!--<groupId>org.codehaus.mojo</groupId>-->
+        <!--<artifactId>versions-maven-plugin</artifactId>-->
+        <!--<version>${versions-maven-plugin.version}</version>-->
+        <!--<reportSets>-->
+          <!--<reportSet>-->
+            <!--<reports>-->
+              <!--<report>dependency-updates-report</report>-->
+              <!--<report>plugin-updates-report</report>-->
+              <!--<report>property-updates-report</report>-->
+            <!--</reports>-->
+          <!--</reportSet>-->
+        <!--</reportSets>-->
+      <!--</plugin>-->
+    <!--</plugins>-->
+  <!--</reporting>-->
 
   <properties>
     <java.version>1.6</java.version>
@@ -1428,50 +1428,50 @@
   </properties>
 
   <profiles>
-    <profile>
-      <id>functional</id>
-      <build>
-        <defaultGoal>verify</defaultGoal>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-failsafe-plugin</artifactId>
-            <configuration>
-              <argLine>${jacoco.agent.argLine}</argLine>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.mortbay.jetty</groupId>
-            <artifactId>maven-jetty-plugin</artifactId>
-            <configuration>
-              <scanIntervalSeconds>10</scanIntervalSeconds>
-              <stopPort>8005</stopPort>
-              <stopKey>STOP</stopKey>
-            </configuration>
-            <executions>
-              <execution>
-                <id>start-jetty</id>
-                <phase>pre-integration-test</phase>
-                <goals>
-                  <goal>run-exploded</goal>
-                </goals>
-                <configuration>
-                  <scanIntervalSeconds>0</scanIntervalSeconds>
-                  <daemon>true</daemon>
-                </configuration>
-              </execution>
-              <execution>
-                <id>stop-jetty</id>
-                <phase>post-integration-test</phase>
-                <goals>
-                  <goal>stop</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
+    <!--<profile>-->
+      <!--<id>functional</id>-->
+      <!--<build>-->
+        <!--<defaultGoal>verify</defaultGoal>-->
+        <!--<plugins>-->
+          <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-failsafe-plugin</artifactId>-->
+            <!--<configuration>-->
+              <!--<argLine>${jacoco.agent.argLine}</argLine>-->
+            <!--</configuration>-->
+          <!--</plugin>-->
+          <!--<plugin>-->
+            <!--<groupId>org.mortbay.jetty</groupId>-->
+            <!--<artifactId>maven-jetty-plugin</artifactId>-->
+            <!--<configuration>-->
+              <!--<scanIntervalSeconds>10</scanIntervalSeconds>-->
+              <!--<stopPort>8005</stopPort>-->
+              <!--<stopKey>STOP</stopKey>-->
+            <!--</configuration>-->
+            <!--<executions>-->
+              <!--<execution>-->
+                <!--<id>start-jetty</id>-->
+                <!--<phase>pre-integration-test</phase>-->
+                <!--<goals>-->
+                  <!--<goal>run-exploded</goal>-->
+                <!--</goals>-->
+                <!--<configuration>-->
+                  <!--<scanIntervalSeconds>0</scanIntervalSeconds>-->
+                  <!--<daemon>true</daemon>-->
+                <!--</configuration>-->
+              <!--</execution>-->
+              <!--<execution>-->
+                <!--<id>stop-jetty</id>-->
+                <!--<phase>post-integration-test</phase>-->
+                <!--<goals>-->
+                  <!--<goal>stop</goal>-->
+                <!--</goals>-->
+              <!--</execution>-->
+            <!--</executions>-->
+          <!--</plugin>-->
+        <!--</plugins>-->
+      <!--</build>-->
+    <!--</profile>-->
     <profile>
       <id>format</id>
       <build>
@@ -1516,35 +1516,35 @@
         </plugins>
       </build>
     </profile>
-    <profile>
-      <id>jacoco-it</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <configuration>
-              <propertyName>jacoco.agent.argLine</propertyName>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-antrun-plugin</artifactId>
-            <configuration>
-              <target>
-                <exec executable="cmd">
-                  <env key="MAVEN_OPTS" value="${env.MAVEN_OPTS} ${jacoco.agent.argLine}"/>
-                  <arg value="/c"/>
-                  <arg value="mvn.bat"/>
-                  <arg value="verify"/>
-                  <arg value="-Pfunctional"/>
-                </exec>
-              </target>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
+    <!--<profile>-->
+      <!--<id>jacoco-it</id>-->
+      <!--<build>-->
+        <!--<plugins>-->
+          <!--<plugin>-->
+            <!--<groupId>org.jacoco</groupId>-->
+            <!--<artifactId>jacoco-maven-plugin</artifactId>-->
+            <!--<configuration>-->
+              <!--<propertyName>jacoco.agent.argLine</propertyName>-->
+            <!--</configuration>-->
+          <!--</plugin>-->
+          <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-antrun-plugin</artifactId>-->
+            <!--<configuration>-->
+              <!--<target>-->
+                <!--<exec executable="cmd">-->
+                  <!--<env key="MAVEN_OPTS" value="${env.MAVEN_OPTS} ${jacoco.agent.argLine}"/>-->
+                  <!--<arg value="/c"/>-->
+                  <!--<arg value="mvn.bat"/>-->
+                  <!--<arg value="verify"/>-->
+                  <!--<arg value="-Pfunctional"/>-->
+                <!--</exec>-->
+              <!--</target>-->
+            <!--</configuration>-->
+          <!--</plugin>-->
+        <!--</plugins>-->
+      <!--</build>-->
+    <!--</profile>-->
     <profile>
       <id>standalone</id>
       <build>
